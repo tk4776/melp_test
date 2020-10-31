@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Melp Test App">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/grids.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="src/css/grids.css">
+    <link rel="stylesheet" type="text/css" href="src/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="src/css/normalize.css">
     <script src="https://kit.fontawesome.com/fd94f68af1.js" crossorigin="anonymous"></script>
     <title>MELP: Best Restaurants</title>
 </head>
@@ -17,7 +17,7 @@
     <header id="home">
         <nav>
             <div class="row">
-                <img src="assets/img/logo-l.png" alt="MELP Logo" class="logo">
+                <img src="src/img/logo-l.png" alt="MELP Logo" class="logo">
                 <ul class="main-nav js--main-nav">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#features">Features</a></li>
@@ -100,22 +100,22 @@
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
+                    <img src="src/img/1.jpg" alt="Korean bibimbap with egg and vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
+                    <img src="src/img/2.jpg" alt="Simple italian pizza with cherry tomatoes">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/3.jpg" alt="Chicken breast steak with vegetables">
+                    <img src="src/img/3.jpg" alt="Chicken breast steak with vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/4.jpg" alt="Autumn pumpkin soup">
+                    <img src="src/img/4.jpg" alt="Autumn pumpkin soup">
                 </figure>
             </li>
         </ul>
@@ -140,32 +140,44 @@
         <ul class="meals-showcase clearfix">
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/5.jpg" alt="Paleo beef steak with vegetables">
+                    <img src="src/img/5.jpg" alt="Paleo beef steak with vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/6.jpg" alt="Healthy baguette with egg and vegetables">
+                    <img src="src/img/6.jpg" alt="Healthy baguette with egg and vegetables">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/7.jpg" alt="Burger with cheddar and bacon">
+                    <img src="src/img/7.jpg" alt="Burger with cheddar and bacon">
                 </figure>
             </li>
             <li>
                 <figure class="meal-photo">
-                    <img src="assets/img/8.jpg" alt="Granola with cherries and strawberries">
+                    <img src="src/img/8.jpg" alt="Granola with cherries and strawberries">
                 </figure>
             </li>
         </ul>
     </section>
 
-    <section class="map-box">
+    <section class="map-box" id="nearu">
         <div class="form-box">
             <h3>TAKE A LOOK ON THE MAP!</h3>
         </div>
+        <br>
         <div id="map"></div>
+        <br>
+        <div class="row-m" id="mapselector">
+            <button id="5" class="btn-full-mr">Show All</button>
+            <div class="mapselector">
+                <button id="4" class="btn-full-m">Show 4</button>
+                <button id="3" class="btn-full-m">Show 3</button>
+                <button id="2" class="btn-full-m">Show 2</button>
+                <button id="1" class="btn-full-m">Show 1</button>
+                <button id="1" class="btn-full-m">Show 0</button>
+            </div>
+        </div>
     </section>
     <footer id="about">
         <div class="row">
@@ -180,9 +192,9 @@
             </div>
             <div class="col span-1-of-2">
                 <ul class="social-links">
-                    <li><span class="small"><i class="fab fa-facebook"></i></span></li>
-                    <li><span class="small"><i class="fab fa-instagram"></i></span></li>
-                    <li><span class="small"><i class="fab fa-github"></i></span></li>
+                    <li><a href="https://facebook.com"><span class="small"><i class="fab fa-facebook"></i></span></a></li>
+                    <li><a href="https://instagram.com"><span class="small"><i class="fab fa-instagram"></i></span></a></li>
+                    <li><a href="https://github.com/tk4776/melp_test"><span class="small"><i class="fab fa-github"></i></a></span></li>
                 </ul>
             </div>
             <div class="row">
@@ -191,6 +203,7 @@
         </div>
     </footer>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 </body>
 </html>
