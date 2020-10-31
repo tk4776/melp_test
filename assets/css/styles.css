@@ -202,7 +202,7 @@ a:hover, a:active {
 /* HEADER */
 
 header {
-    background-image: -webkit-radial-gradient(circle, rgba(2,0,36,0) 15%, rgba(78,78,78,0.5018382352941176) 35%, rgba(0,0,0,1) 100%), url("/assets/css/img/backg-l.jpg");
+    background-image: -webkit-radial-gradient(circle, rgba(2,0,36,0) 15%, rgba(78,78,78,0.5018382352941176) 35%, rgba(0,0,0,1) 100%), url("img/backg-l.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
