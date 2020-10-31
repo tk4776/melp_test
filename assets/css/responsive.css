@@ -28,14 +28,11 @@
         .icon-small { 
             width: 17px;
             margin-right: 5px;}
-        .city-feature { font-size: 90%;}
 
         .plan-box {
             width: 100%;
             margin-left: 0%;
         }
-
-        .price-plan { font-size: 250%;}
 
         .contact-form { width:  90%;}
 
@@ -52,8 +49,14 @@
         .col { width: 100%;
             margin: 0 0 4% 0; }
 
-        .main-nav {display: none; } 
-        .mobile-nav-icon { display: inline-block;}
+        .main-nav {
+            justify-content: flex-end;
+        } 
+        .mobile-nav-icon { 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
 
         .main-nav {

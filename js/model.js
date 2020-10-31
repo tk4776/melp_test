@@ -47,7 +47,7 @@ let selection = function(id){
         options.onclick = eventt => {
             const ID_STARS = eventt.target.id;
             
-            if(ID_STARS === 0){
+            if(ID_STARS == 0){
                 showResultsRate(MOST_WANTED_0, output);
             } else if(ID_STARS == 1){
                 showResultsRate(MOST_WANTED_1, output);
@@ -97,11 +97,8 @@ let showResultsAZ = (filter, output) => {
             </blockquote>
             <div class="row">
                 <div class="col span-1-of-2">
-                    <a href="${filter[i]['contact']['site']}"><span class="ico"><i class="fas fa-link"></i></span></a>
-                </div>
-                <div class="col span-1-of-2">
-                    <a href="https://www.facebook.com/TimeOutMex/posts/1435962823098307"><span class="ico"><i class="fab fa-facebook-square"></i></span></a>
-                </div>
+                    <a href="${filter[i]['contact']['site']}"><span class="ico"><i class="fas fa-link">website</i></span></a>
+                </div>  
             </div>
         `;
     document.querySelector('#hereAZ').append(output);
@@ -127,19 +124,37 @@ let showResultsRate = (filter, output) => {
                 <br></cite>
             </blockquote>
             <div class="row">
-                <div class="col span-1-of-2">
-                    <a href="${filter[i]['contact']['site']}"><span class="ico"><i class="fas fa-link"></i></span></a>
+                <div class="fb-like" 
+                    data-href="${(filter[i]['contact']['site'])}" 
+                    data-width="" 
+                    data-layout="button_count" 
+                    data-action="like" 
+                    data-size="small" 
+                    data-share="true">
                 </div>
                 <div class="col span-1-of-2">
-                    <a href="https://www.facebook.com/TimeOutMex/posts/1435962823098307"><span class="ico"><i class="fab fa-facebook-square"></i></span></a>
-                </div>
+                    <a href="${filter[i]['contact']['site']}"><span class="ico"><i class="fas fa-link">website</i></span></a>
+                </div>            
             </div>
         `;
     document.querySelector('#here09').append(output);
     }
+    FB.XFBML.parse();
 }
 
 // Getting locations
 const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED = MAP_MOST_WANTED(MOST_WANTED_4);
+export const LOC_MOST_WANTED_4 = MAP_MOST_WANTED(MOST_WANTED_4);
+
+const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_3 = MAP_MOST_WANTED(MOST_WANTED_3);
+
+const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_2 = MAP_MOST_WANTED(MOST_WANTED_2);
+
+const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_1 = MAP_MOST_WANTED(MOST_WANTED_1);
+
+const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_0 = MAP_MOST_WANTED(MOST_WANTED_40);
 
