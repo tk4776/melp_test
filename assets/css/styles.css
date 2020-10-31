@@ -125,10 +125,6 @@ span {
     padding: 0;
 }
 
-.starsss {
-    
-}
-
 /* LINKS */
 
 a:link, a:visited {
@@ -209,7 +205,7 @@ header {
     background-attachment: fixed;
 }
 
-.text-box {
+.hero-text-box {
     position: absolute;
     width: 1140px;
     top: 50%;
@@ -253,6 +249,19 @@ header {
 .main-nav li a:hover, .main-nav li a:active {
     border-bottom: 2px solid #FFEED3;
 
+}
+
+/* MOBILE NAV */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobi-nav-icon {
+    font-size: 200%;
+    color: #FFEED3;
 }
 
 .sticky {
@@ -418,4 +427,30 @@ footer p {
     color: #8D3D5D;
     text-align: center;
     margin-top: 20px;
+}
+
+/****   Animations    *****/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+
+.js--wp-1 {
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }
