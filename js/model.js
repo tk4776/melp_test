@@ -19,6 +19,23 @@ export const MOST_WANTED_1 = GET_MOST_WANTED_1(DATA_MELP);
 const GET_MOST_WANTED_0 = arr => arr.filter(({ rating }) => rating == 0);
 export const MOST_WANTED_0 = GET_MOST_WANTED_0(DATA_MELP);
 
+// Getting locations
+const MAP_MOST_WANTED_4 = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_4 = MAP_MOST_WANTED_4(MOST_WANTED_4);
+
+const MAP_MOST_WANTED_3 = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_3 = MAP_MOST_WANTED_3(MOST_WANTED_3);
+
+const MAP_MOST_WANTED_2 = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_2 = MAP_MOST_WANTED_2(MOST_WANTED_2);
+
+const MAP_MOST_WANTED_1 = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_1 = MAP_MOST_WANTED_1(MOST_WANTED_1);
+
+const MAP_MOST_WANTED_0 = arr => arr.map(({ address }) => address.location);
+export const LOC_MOST_WANTED_0 = MAP_MOST_WANTED_0(MOST_WANTED_0);
+
+// Controller for Show Data
 document.querySelector('#order').addEventListener('click', evnt => {
     selection(evnt.target.id);
 });
@@ -141,20 +158,3 @@ let showResultsRate = (filter, output) => {
     }
     FB.XFBML.parse();
 }
-
-// Getting locations
-const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED_4 = MAP_MOST_WANTED(MOST_WANTED_4);
-
-const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED_3 = MAP_MOST_WANTED(MOST_WANTED_3);
-
-const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED_2 = MAP_MOST_WANTED(MOST_WANTED_2);
-
-const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED_1 = MAP_MOST_WANTED(MOST_WANTED_1);
-
-const MAP_MOST_WANTED = arr => arr.map(({ address }) => address.location);
-export const LOC_MOST_WANTED_0 = MAP_MOST_WANTED(MOST_WANTED_40);
-
