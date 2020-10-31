@@ -20,7 +20,7 @@ What I Achive:
 
 **-**
 
-###To Do:
+### To Do:
 >1. Fix Nav-Bar Menu for Mobile (It Doesn't Scroll Down).
 >2. Fix design while creating new <-div-> in sort.
 >3. Show Data in Markers
@@ -29,7 +29,7 @@ What I Achive:
 >6. Debugg code to improve response.
 
 
-###Links
+### Links
 
 These are the resources I used to develop this project.
 
@@ -40,3 +40,6 @@ These are the resources I used to develop this project.
 [Google Maps](https://developers.google.com/maps/documentation/javascript/get-api-key)
 
 [Font-Awesome](https://fontawesome.com/)
+
+## NOTE
+** assets folder is not necessary anymore **
