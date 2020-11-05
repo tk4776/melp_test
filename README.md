@@ -43,3 +43,5 @@ These are the resources I used to develop this project.
 
 ## NOTE
 ** assets folder is not necessary anymore **
+## NOTE #2
+** the API Key was removed from the source code, please download the project to add your own key.
