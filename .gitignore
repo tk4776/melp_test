@@ -1,0 +1,6 @@
+# Dependencies
+assets/
+node_modules/
+
+# Testing
+package-lock.json

@@ -1,8 +1,8 @@
 "use strict";
-import { MOST_WANTED_4, MOST_WANTED_3, MOST_WANTED_2, MOST_WANTED_1, MOST_WANTED_0 } from './main-info.js';
+//import { MOST_WANTED_4, MOST_WANTED_3, MOST_WANTED_2, MOST_WANTED_1, MOST_WANTED_0 } from './main-info.js';
 import { LOC_MOST_WANTED_0, LOC_MOST_WANTED_1, LOC_MOST_WANTED_2, LOC_MOST_WANTED_3, LOC_MOST_WANTED_4 } from './main-info.js';
 
-const API_MAPS_KEY = 'AIzaSyCa1yYaTu89zifBmqsEHF8_wpq-Kr4_gEg';
+const API_MAPS_KEY = 'UseYourOwnKey';
 
 /* Controller for Show Maps */
 let scripMap = document.createElement('script');
